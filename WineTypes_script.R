@@ -1,15 +1,16 @@
 rm(list=ls())
 
 # Libraries
-library(ggplot2)
-library(caret)
-library(dslabs)
-library(dplyr)
-library(skimr)
-library(klaR)
+if(!require("ggplot2")) install.packages("ggplot2")
+if(!require("caret")) install.packages("caret")
+if(!require("dslabs")) install.packages("dslabs")
+if(!require("dplyr")) install.packages("dplyr")
+if(!require("skimr")) install.packages("skimr")
+if(!require("klaR")) install.packages("klaR")
+
 
 # Read the data (classifying wines into 3 different cultivars)
-d <- read.table('C:/Users/HP.LAPTOP-IHUVNI6O/Downloads/wine.data', encoding="UTF-16", dec=".", sep=",", header=FALSE)
+d <- read.table('wine.data', encoding="UTF-16", dec=".", sep=",", header=FALSE)
 d
 
 # Add column names
@@ -36,7 +37,7 @@ test_set %>% group_by(Cultivar) %>% count()
 
 # Basic statistics for each feature
 skimmed <- skim_to_wide(train_set)
-skimmed[, c(1:5, 9:16)]
+skimmed[2:14, c(1:5, 9:16)]
 
 
 # Normalize the data into range [0,1]
