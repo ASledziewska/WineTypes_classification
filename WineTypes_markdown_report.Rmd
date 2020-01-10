@@ -39,7 +39,7 @@ library(dplyr)
 library(skimr)
 library(klaR)
 
-d <- read.table('C:/Users/HP.LAPTOP-IHUVNI6O/Downloads/wine.data', encoding="UTF-16", dec=".", sep=",", header=FALSE)
+d <- read.table('wine.data', encoding="UTF-16", dec=".", sep=",", header=FALSE)
 
 colnames(d) <- c("Cultivar", "Alcohol", "Malic_acid", "Ash", "Alcalinity", "Magnesium", "Total_phenols", "Flavanoids", "Nonflavanoid_phenols", "Proanthocyanins", "Color_intensity", "Hue", "OD280", "Proline")
 
