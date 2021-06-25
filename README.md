@@ -54,7 +54,7 @@ Finally, 4 different classification models were built using:
 
 * K-Nearest Neighbors algorithm
 * Random Forest algorithm
-* Linear Discriminant Analysis (LDA) algorithm
+* Analysis (LDA) algorithm
 * Quadratic Discriminant Analysis (QDA) algorithm
 
 
@@ -100,7 +100,7 @@ The number of explanatory variables is a parameter that needs to be determined w
 
 The contingency table and measures of sensitivity and specificity illustrate that the model incorrectly classifies only one observation in the validation set (from class 2). All class 1 observations have been correctly classified.
 
-<img src="https://github.com/ASledziewska/WineTypes_classification/blob/master/images/Table8.jpg" alt="Table 8" width="400"/>
+<img src="https://github.com/ASledziewska/WineTypes_classification/blob/master/images/Table8.jpg" alt="Table 8" width="300"/>
 
 The above table shows the variables in order of importance. The most important variable to create a random forest model was the proline content, followed by the intensity of color and flavonoids. When creating a random forest model, most of the variables other than in the k-nearest neighbors model were of the greatest importance. The lowest importance, both for the model of random forest and for the model of k-nearest neighbors, had the variable Ash, i.e. as it could be expected after looking at the boxplots generated in Methodology chapter.
 
@@ -113,11 +113,11 @@ The above graph shows how an example of a decision tree (classification) classif
 
 The Linear Discriminant Analysis (LDA) algorithm consists in determining the hyperplane separating objects of different classes. The Quadratic Discriminant Analysis (QDA) algorithm is an extension of the linear discriminant algorithm and allows parabolic separating surfaces to occur. However, the quadratic discriminant algorithm works correctly only if the conditional probabilities for explanatory variables have multivariate normal distribution.
 
-<img src="https://github.com/ASledziewska/WineTypes_classification/blob/master/images/Table9.jpg" alt="Table 9" width="400"/>
+<img src="https://github.com/ASledziewska/WineTypes_classification/blob/master/images/Table9.jpg" alt="Table 9" width="300"/>
 
 The LDA model was only wrong in one case. Its accuracy was equal 98.18%.
 
-<img src="https://github.com/ASledziewska/WineTypes_classification/blob/master/images/Table10.jpg" alt="Table 10" width="400"/>
+<img src="https://github.com/ASledziewska/WineTypes_classification/blob/master/images/Table10.jpg" alt="Table 10" width="300"/>
 
 The QDA model was not mistaken even once. The accuracy, sensitivity and specificity of the model were equal 100%.
 
